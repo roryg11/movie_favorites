@@ -1,0 +1,14 @@
+<h1>Movies List</h1>
+
+<h1>Scraping Through Everyone's Favorite Movies</h1>
+
+<div id="name">
+  <ul>
+    <% @movies.each do |movie| %>
+      <li><%= movie.title %></li>
+      <li><%= movie.year %></li>
+      <li><%= movie.plot %></li>
+      <p><%= image_tag movie.image_url %></p>
+    <% end %>
+  </ul>
+</div>

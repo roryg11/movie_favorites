@@ -1,0 +1,10 @@
+<h1>Scraping Through Everyone's Favorite Movies</h1>
+
+<% @movies.each do |movie| %>
+  <%= movie.title %>
+  <%= movie.year %>
+  <%= movie.plot %>
+  <%= movie.image_url %>
+<% end %>
+
+<%= link_to "all movies", movies_index_path %>
